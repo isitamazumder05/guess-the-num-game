@@ -1,0 +1,18 @@
+import random
+actual_number= random.randint(1,100)
+count=0
+while True:
+    # Enter the number you are guessing
+    guess= int(input("Enter a number:"))
+    count+=1 
+    if(actual_number>guess):
+         print("Your guess is too low,try higher!")
+          
+    elif(actual_number<guess):
+         print("Your guess is too high, try a lower number!")
+         
+    else:
+         print(actual_number,"is the correct guess.Congratulations!")
+         print("You guessed it right in",count,"gusses.")
+         break    
+    
